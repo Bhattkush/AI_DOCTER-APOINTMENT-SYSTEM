@@ -37,7 +37,7 @@ backend/         FastAPI + SQLAlchemy + PostgreSQL + Alembic (all APIs)
 mobile-app/       React Native Expo — patient app
 doctor-panel/    React.js — doctor website
 admin-panel/     React.js — admin website
-docker-compose.yml  Postgres + backend, one command to run the API
+
 ```
 
 ## Quick start (backend)
@@ -57,11 +57,6 @@ python -m app.seed             # creates tables + seeds default data
 uvicorn app.main:app --reload  # http://localhost:8000
 ```
 
-Or with Docker (Postgres + backend in one shot):
-
-```bash
-docker compose up --build
-```
 
 API docs: http://localhost:8000/docs
 
